@@ -39,17 +39,17 @@ const initialState: DocumentsStateProps = {
 }
 
 export interface DocumentContextProps {
-	state: DocumentsStateProps,
-	dispatcher: any
+	documentSelectionState: DocumentsStateProps,
+	documentSelectionDispatcher: any
 }
 
-export const DocumentSelectionContext = createContext<DocumentContextProps>({state: initialState, dispatcher: null});
+export const DocumentSelectionContext = createContext<DocumentContextProps>({documentSelectionState: initialState, documentSelectionDispatcher: null});
 
 export const DocumentSelectionContextProvider = ({children}: {children: React.ReactNode}) =>
 {
 	const [state, setState] = useState(initialState);
 	return(
-		<DocumentSelectionContext.Provider value={ {state: state, dispatcher: setState} }>
+		<DocumentSelectionContext.Provider value={ {documentSelectionState: state, documentSelectionDispatcher: setState} }>
 			{children}
 		</DocumentSelectionContext.Provider>
 	)

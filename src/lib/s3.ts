@@ -1,5 +1,6 @@
 import AWS from 'aws-sdk';
 import { param } from 'drizzle-orm';
+import {useContext} from "react";
 
 export async function uploadToS3(file: File){
  try{
@@ -39,7 +40,7 @@ export async function uploadToS3(file: File){
 
 
 export function getS3Url(file_key: string){
-    const url = `https://${process.env.NEXT_PUBLIC_S3_BUCKET_NAME}.s3.  ap-southeast-2.amazonaws.com/${file_key}`;
+    const url = `https://${process.env.NEXT_PUBLIC_S3_BUCKET_NAME}.s3.ap-southeast-2.amazonaws.com/${file_key}`;
     return url;
 }
 

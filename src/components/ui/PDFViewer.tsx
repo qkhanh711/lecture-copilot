@@ -4,7 +4,9 @@ interface PDFViewerProps{
 export const PDFViewer = (props: PDFViewerProps) =>
 {
 	return (
-		<iframe src={props.url} className={'h-full w-full'}>
-		</iframe>
+		<iframe src={`https://docs.google.com/viewer?url=${props.url}&embedded=true`} className={'w-full h-full'}></iframe>
+	
+	// <iframe src={props.url}  className={'h-full w-full'}>
+	// 	</iframe>
 	)
 }

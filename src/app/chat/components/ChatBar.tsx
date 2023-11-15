@@ -2,11 +2,12 @@ import {DocumentContextProps, DocumentsStateProps, MessageProperties} from "@/ap
 import Message from "@/app/chat/components/Message";
 import { IoIosSend } from "react-icons/io";
 interface ChatBarProps {
-	state: DocumentsStateProps
+	state: DocumentsStateProps,
+	sendMessageFunction: any
 }
 export default function ChatBar(props: ChatBarProps)
 {
-	const {state} = {...props};
+	const {state, sendMessageFunction} = {...props};
 	return(
 		<div className={'h-full w-full mt-10'}>
 			<div className={'h-[80vh] overflow-auto'}>
@@ -18,8 +19,8 @@ export default function ChatBar(props: ChatBarProps)
 				}	
 			</div>
 			<div className={'flex top-[85vh] justify-center items-center'}>
-				<textarea rows={2} className={'w-full block border-2 border-black pl-4 pt-2'} placeholder={'Type your message here'}/>
-				<button className={'text-4xl hover:text-blue-500'}><IoIosSend/></button>
+				<textarea id={'message-text'} rows={2} className={'w-full block border-2 border-black pl-4 pt-2'} placeholder={'Type your message here'}/>
+				<button onClick={()=>{sendMessageFunction()}} className={'text-4xl hover:text-blue-500'}><IoIosSend/></button>
 			</div>
 		</div>
 	)
