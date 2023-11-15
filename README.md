@@ -18,8 +18,8 @@ Mã nguồn sẽ được xây dựng và hoàn thiện dần dần các tính n
 Ta cần phải tải mã nguồn về máy:
 
 ```bash
-git clone https://
-cd 
+git clone https://github.com/qkhanh711/lecture-copilot
+cd lecture-copilot
 ```
 
 ## Thiết lập các API Keys
@@ -76,6 +76,6 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-## Debug 
+## Debug
 
 Mọi vấn đề về code xin vui lòng liên hệ tới email:  21011488@st.phenikaa-uni.edu.vn  -- (Duy Anh)
