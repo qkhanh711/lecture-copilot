@@ -26,7 +26,7 @@ cd lecture-copilot
 
 Trong giai đoạn này, dự án vẫn đang sử dụng các công cụ mã nguồn mở khác dưới dạng API trả phí để đảm bảo dễ dàng triển khai trong nhiều thiết bị. Các công cụ này sẽ có mất phí nếu nhu cầu sử dụng vượt quá Free-tier của các công cụ. Đế sử dụng tiếp, các công cụ sẽ thu thêm tiền theo nhu cầu sử dụng.
 
-**Các API Keys dù có gia hạn phí thì việc thiết lập API token thì cũng chỉ cần một lần ngay ban đầu**.
+**Các API Keys dù có gia hạn phí thì việc thiết lập API token thì cũng chỉ cần một lần duy nhất**.
 
 API sẽ được lưu trong file .env
 
@@ -72,13 +72,26 @@ docker run -p 3000:3000 -p 8000:8000 lecture_copilot:0.1.1
 
 **!!!!!Lưu ý!!!!!:** Trong trường hợp bạn thay đổi API Tokens, bạn phải chạy 2 câu lệnh này lại một lần nữa
 
-## Deploy on Vercel
+## Triển khai với Vercel
 
-Ngoài ra ta có thể dễ dàng public dự án ra với Vercel.
+Ngoài ra ta có thể dễ dàng hiện công khai dự án với Vercel.
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Công cụ sử dụng
+[PineconeDB](https://www.pinecone.io/)
+
+[NeonDB](https://neon.tech/)
+
+[NextJS](https://nextjs.org/)
+
+[AWS S3](https://aws.amazon.com/s3)
+
+[FastAPI](https://fastapi.tiangolo.com/)
+
+[LangChain](https://python.langchain.com/docs/get_started/introduction)
 
 ## Debug
 
