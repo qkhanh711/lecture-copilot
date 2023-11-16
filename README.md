@@ -38,7 +38,7 @@ Nội dung của file sẽ gồm
 
 ```
 #NeonDB
-DATABASE_URL=p
+DATABASE_URL=
 
 # AWS S3
 NEXT_PUBLIC_S3_ACCESS_KEY_ID=
