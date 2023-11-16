@@ -1,24 +1,18 @@
-# Use an official Node.js runtime as a parent image
-FROM node:alpine
+FROM node:16-alpine
 
-# Set the working directory to /app
 WORKDIR /app
 
-# Copy package.json and package-lock.json to /app
-COPY package*.json ./
+COPY package.json ./
+RUN npm install
 
-# Install dependencies
-RUN npm install 
+COPY next.config.js ./
+COPY pages ./
+COPY ./.next ./
 
-# Copy the rest of the application code to /app
-COPY . .
+COPY requirements.txt ./
+RUN pip install -r requirements.txt
 
-# Build the application
-# RUN npm --verbose install
-# RUN npm run build
+EXPOSE 3000 8000
 
-# Expose port 3000
-EXPOSE 3000
-
-# Start the application
-CMD npm run dev
+CMD ["npm", "run", "dev"]
+CMD ["uvicorn", "arc/main:app", "--port","8000"]

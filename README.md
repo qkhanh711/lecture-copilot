@@ -38,14 +38,18 @@ Nội dung của file sẽ gồm
 
 ```
 #NeonDB
-DATABASE_URL= #Thêm API bạn vào đây
+DATABASE_URL=p
 
 # AWS S3
-NEXT_PUBLIC_S3_ACCESS_KEY_ID= #Thêm API của bạn vào đây
-NEXT_PUBLIC_S3_SECRET_ACCESS_KEY= #Thêm API của bạn vào đây
+NEXT_PUBLIC_S3_ACCESS_KEY_ID=
+NEXT_PUBLIC_S3_SECRET_ACCESS_KEY_ID=
+NEXT_PUBLIC_S3_BUCKET_NAME=
 
-# Pinecone
-PINECONE_ENVIRONMENT= #Thêm API của bạn vào đây
+# PINECONE
+PINECONE_ENVIRONMENT=
+PINECONE_API_KEY=
+
+OPENAI_API_KEY = 
 ```
 
 ### Hướng dẫn lấy API cho từng công cụ
@@ -63,7 +67,7 @@ Ta sẽ chạy 2 câu lệnh như sau để dự án có thể triển khai trê
 ```
 docker build -t lecture_copilot:0.1.0 .
 
-docker run --publish 3000:3000 lecture_copilot:0.1.0
+docker run --publish 3000:3000 8000:8000 lecture_copilot:0.1.0
 ```
 
 **!!!!!Lưu ý!!!!!:** Trong trường hợp bạn thay đổi API Tokens, bạn phải chạy 2 câu lệnh này lại một lần nữa
