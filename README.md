@@ -26,7 +26,7 @@ cd lecture-copilot
 
 Trong giai đoạn này, dự án vẫn đang sử dụng các công cụ mã nguồn mở khác dưới dạng API trả phí để đảm bảo dễ dàng triển khai trong nhiều thiết bị. Các công cụ này sẽ có mất phí nếu nhu cầu sử dụng vượt quá Free-tier của các công cụ. Đế sử dụng tiếp, các công cụ sẽ thu thêm tiền theo nhu cầu sử dụng.
 
-**Các API Keys dù có gia hạn phí thì việc thiết lập API token thì cũng chỉ cần một lần duy nhất**.
+**Các API Keys dù có gia hạn phí thì việc thiết lập API Keys thì chỉ cần một lần duy nhất**.
 
 API sẽ được lưu trong file .env
 
@@ -70,7 +70,7 @@ docker build -t lecture_copilot:0.1.1 .
 docker run -p 3000:3000 -p 8000:8000 lecture_copilot:0.1.1
 ```
 
-**!!!!!Lưu ý!!!!!:** Trong trường hợp bạn thay đổi API Tokens, bạn phải chạy 2 câu lệnh này lại một lần nữa
+**!!!!!Lưu ý!!!!!:** Trong trường hợp bạn thay đổi API Keys, bạn phải chạy 2 câu lệnh này lại một lần nữa
 
 ## Triển khai với Vercel
 
