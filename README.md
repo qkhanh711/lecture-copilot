@@ -65,9 +65,9 @@ OPENAI_API_KEY =
 Ta sẽ chạy 2 câu lệnh như sau để dự án có thể triển khai trên localhost:
 
 ```
-docker build -t lecture_copilot:0.1.0 .
+docker build -t lecture_copilot:0.1.1 .
 
-docker run -p 3000:3000 -p 8000:8000 lecture_copilot:0.1.0
+docker run -p 3000:3000 -p 8000:8000 lecture_copilot:0.1.1
 ```
 
 **!!!!!Lưu ý!!!!!:** Trong trường hợp bạn thay đổi API Tokens, bạn phải chạy 2 câu lệnh này lại một lần nữa
